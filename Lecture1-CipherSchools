@@ -1,0 +1,19 @@
+What is Data Science?
+Data science involves the analysis and manipulation of various types of data, such as text, images, audio, or video, to uncover insights and make predictions. By leveraging sophisticated algorithms and models, data science can recommend actionable insights and solutions, often implemented through recommendation systems.
+
+Data Science vs. AI vs. ML
+Data Science is the broad field that encompasses mathematics, statistics, data visualization, and exploratory data analysis (EDA). It forms the foundational framework upon which both Artificial Intelligence (AI) and Machine Learning (ML) are built.
+
+Artificial Intelligence (AI) involves creating systems that can simulate human intelligence and decision-making processes. By providing data to these systems, they can autonomously make decisions and generate outputs. Essentially, AI acts as the "brain" of a system, enabling it to function independently. Examples include Amazon Echo and Google Assistant.
+
+Machine Learning (ML) is a subset of AI that focuses on developing algorithms capable of learning from and making predictions based on data. It is primarily used for generating recommendations and predictions by analyzing past data. Examples include movie recommendations on Netflix and product suggestions on Amazon.
+
+Hierarchy of AI, ML, and Deep Learning:
+
+AI (Artificial Intelligence): The broadest category that includes any system capable of simulating intelligent behavior.
+ML (Machine Learning): A subset of AI focused on algorithms that learn from data to make predictions or decisions.
+Deep Learning: A specialized subset of ML that uses neural networks with many layers (deep neural networks) to solve complex problems. Deep learning is particularly effective for tasks like image and speech recognition.
+Note
+AI (Artificial Intelligence) is the overarching field that includes ML and Deep Learning.
+ML (Machine Learning) is a subset of AI.
+Deep Learning is a subset of ML that uses neural networks to address complex problems by mimicking the human brain's structure and function.
