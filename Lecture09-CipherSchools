@@ -1,0 +1,43 @@
+Excel Functions for Text Manipulation
+TRIM: Removes all extra spaces from text.
+
+Syntax: =TRIM(cell_name)
+PROPER: Converts the first letter of each word to uppercase.
+
+Syntax: =PROPER(cell_name)
+UPPER: Converts all letters in a text string to uppercase.
+
+Syntax: =UPPER(cell_name)
+LOWER: Converts all letters in a text string to lowercase.
+
+Syntax: =LOWER(text_name)
+Text Manipulation Functions
+LEFT: Extracts a specified number of characters from the left side of a text string.
+
+Syntax: =LEFT(cell_name, number_of_characters)
+MID: Returns a specified number of characters from the middle of a text string.
+
+Syntax: =MID(cell_name, start_position, number_of_characters)
+SEARCH: Finds the position of a specific character or substring within a text string.
+
+Syntax: =SEARCH("substring", cell_name)
+LEN: Returns the length of a text string.
+
+Syntax: =LEN(cell_name)
+RIGHT: Extracts characters from the right side of a text string, based on a specified number of characters.
+
+Syntax: =RIGHT(cell_name, LEN(cell_name) - SEARCH(" ", cell_name))
+Text Combining Functions
+CONCATENATE: Combines two or more text strings into one.
+
+Syntax: =CONCATENATE(cell_name1, cell_name2)
+TEXTJOIN: Combines text from multiple ranges, allowing you to specify a delimiter.
+
+Syntax: =TEXTJOIN("delimiter", TRUE, cell_name1, cell_name2)
+Conditional Logical Functions
+IF: Checks a condition and returns one value if the condition is true, and another value if it is false.
+
+Syntax: =IF(condition, value_if_true, value_if_false)
+IFERROR: Returns a specified value if a formula results in an error; otherwise, it returns the result of the formula.
+
+Syntax: =IFERROR(value, value_if_error)
