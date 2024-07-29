@@ -1,0 +1,146 @@
+Data Cleaning and Normalization
+Definition:
+
+Data Cleaning: The process of identifying and correcting or removing errors and inconsistencies in data to improve its quality. Common tasks include handling missing values, removing duplicates, correcting errors, and ensuring consistency in data formats.
+Normalization: The process of scaling numerical data to a standard range, usually between 0 and 1, or transforming it to have a mean of 0 and a standard deviation of 1. This helps improve the performance of machine learning algorithms and ensures that all features contribute equally to the result.
+Use Cases in Real Life:
+
+Preparing Data for Machine Learning: Handle missing values and remove duplicates to ensure clean data. Normalize features to enhance the performance of machine learning algorithms.
+Financial Data Analysis: Correct errors in transaction data and fill missing values. Normalize financial metrics to allow comparison across different scales.
+Customer Data Management: Ensure consistency in customer records and correct erroneous entries. Normalize customer age and income data for segmentation analysis.
+Loading the Dataset
+python
+Copy code
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv('sample_data.csv')
+print(df)
+Identifying Missing Values
+python
+Copy code
+# Check for missing values
+print(df.isnull().sum())
+
+df.info()
+Removing Rows with Missing Values
+python
+Copy code
+# Remove rows with any missing values
+df_cleaned = df.dropna()
+print(df_cleaned)
+Filling Missing Values
+python
+Copy code
+# Fill missing values with a specific value
+df_filled = df.fillna({
+    'Age': df['Age'].mean(),
+    'Salary': df['Salary'].mean()
+})
+print(df_filled)
+Forward Fill Method
+python
+Copy code
+# Forward fill method to propagate the next values backward
+df_ffill = df.fillna(method='ffill')
+print(df_ffill)
+Backward Fill Method
+python
+Copy code
+# Backward fill method to propagate the next values forward
+df_bfill = df.fillna(method='bfill')
+print(df_bfill)
+Removing Duplicates
+python
+Copy code
+# Add duplicate rows for demonstration
+df = pd.concat([df, df.iloc[[0]], df.iloc[[1]]], ignore_index=True)
+print('Before removing duplicates: \n', df)
+
+# Remove duplicate rows
+df_no_duplicates = df.drop_duplicates()
+print('After removing duplicates: \n', df_no_duplicates)
+Replacing Incorrect Values
+python
+Copy code
+# Replace incorrect values in the 'Department' column
+df_corrected = df.replace({'Department': {'HR': 'Human Resources', 'Sales': 'Sales'}})
+print(df_corrected)
+Ensuring Consistency
+python
+Copy code
+# Convert all department names to lowercase for consistency
+df['Department'] = df['Department'].str.lower()
+print(df)
+Min-Max Normalization
+Definition:
+Min-max normalization is a technique used to rescale the values of a feature to a fixed range, usually [0, 1].
+
+Formula:
+𝑋
+normalized
+=
+𝑋
+−
+𝑋
+min
+𝑋
+max
+−
+𝑋
+min
+X 
+normalized
+​
+ = 
+X 
+max
+​
+ −X 
+min
+​
+ 
+X−X 
+min
+​
+ 
+​
+ 
+
+Where:
+
+𝑋
+X is the original value.
+𝑋
+min
+X 
+min
+​
+  is the minimum value in the feature.
+𝑋
+max
+X 
+max
+​
+  is the maximum value in the feature.
+𝑋
+normalized
+X 
+normalized
+​
+  is the normalized value.
+Implementation:
+
+python
+Copy code
+# Apply Min-Max normalization using the formula
+df_normalized = df.copy()
+for col in ['Age', 'Salary']:
+    df_normalized[col] = (df[col] - df[col].min()) / (df[col].max() - df[col].min())
+
+# Print original and normalized values
+print("Original DataFrame:")
+print(df)
+print("\nNormalized DataFrame:")
+print(df_normalized)
+By performing these data cleaning and normalization steps, you can ensure that your data is ready for analysis and modeling, improving the quality and accuracy of your results.
