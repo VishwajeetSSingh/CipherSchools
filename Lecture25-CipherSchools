@@ -1,0 +1,171 @@
+Hypothesis Testing & Inferential Statistics
+Hypothesis Testing
+
+Definition:
+Hypothesis testing is a statistical method used to determine whether there is enough evidence in a sample to infer that a specific condition holds for the entire population.
+
+Steps in Hypothesis Testing:
+
+State the Hypotheses:
+
+Null Hypothesis (H₀): A statement of no effect or no difference. It represents the default or baseline assumption.
+Alternative Hypothesis (H₁ or Ha): A statement that contradicts the null hypothesis, indicating the presence of an effect or difference.
+Choose a Significance Level (α):
+
+Commonly used values are 0.05, 0.01, and 0.10. This threshold determines the probability of rejecting the null hypothesis when it is true (Type I error).
+Collect Data and Compute a Test Statistic:
+
+Test statistics are computed based on the data and the type of test being used (e.g., Z-test, T-test, ANOVA, Chi-square).
+Determine the P-value:
+
+The P-value represents the probability of observing the data, or something more extreme, assuming the null hypothesis is true.
+Make a Decision:
+
+Compare the P-value to the significance level α:
+If 
+𝑃
+≤
+𝛼
+P≤α, reject the null hypothesis.
+If 
+𝑃
+>
+𝛼
+P>α, fail to reject the null hypothesis.
+Types of Tests:
+
+Z-test: Used when the sample size is large (n > 30) and the population variance is known.
+T-test: Used when the sample size is small (n ≤ 30) or the population variance is unknown.
+ANOVA: Used to compare means across multiple groups.
+Chi-square Test: Used for categorical data to assess the association between variables.
+Scenario Example:
+A basketball coach claims his team scores more than 50 points on average. To test this:
+
+State the Hypotheses:
+
+H₀: μ = 50 (average score is 50)
+H₁: μ > 50 (average score is greater than 50)
+Collect Data:
+
+Suppose the sample mean score from 5 games is 51.2.
+Compare Sample Mean:
+
+If the sample mean is greater than 50, it suggests supporting the coach's claim.
+Decision:
+
+Based on this simple comparison (without formal statistical testing), the evidence seems to support the coach’s claim.
+Applications:
+
+A/B Testing: Testing two versions of a webpage to see which one performs better in terms of conversion rates.
+Medicine: Testing the efficacy of a new drug against a placebo.
+Inferential Statistics
+
+Key Concepts:
+
+Population and Sample:
+
+Population: The entire group of interest.
+Sample: A subset of the population used to draw conclusions about the population.
+Estimation:
+
+Point Estimation: Provides a single value estimate of a population parameter (e.g., sample mean as an estimate of the population mean).
+Interval Estimation (Confidence Intervals): Provides a range of values within which the parameter is expected to lie, with a certain degree of confidence.
+Common Point Estimators:
+
+Sample Mean (
+𝑥
+ˉ
+x
+ˉ
+ ): Estimate of the population mean (
+𝜇
+μ).
+Sample Proportion (
+𝑝
+^
+p
+^
+​
+ ): Estimate of the population proportion (
+𝑝
+p).
+Sample Variance (
+𝑠
+2
+s 
+2
+ ): Estimate of the population variance (
+𝜎
+2
+σ 
+2
+ ).
+Example:
+If you calculate the average score of a sample of students, this average is a point estimate of the overall average score for all students.
+
+Components of Confidence Intervals:
+
+Confidence Level: Indicates the probability that the interval contains the true population parameter (e.g., 95% confidence).
+Margin of Error: The range within which the true parameter is expected to fall.
+Formula for Confidence Interval:
+For a population mean:
+CI
+=
+𝑥
+ˉ
+±
+𝑧
+×
+𝑠
+𝑛
+CI= 
+x
+ˉ
+ ±z× 
+n
+​
+ 
+s
+​
+ 
+
+Where:
+
+𝑥
+ˉ
+x
+ˉ
+  is the sample mean.
+𝑧
+z is the z-score for the desired confidence level (e.g., 1.96 for 95% confidence).
+𝑠
+s is the sample standard deviation.
+𝑛
+n is the sample size.
+Example Calculation:
+If a sample mean score is 75, the sample standard deviation is 10, and the sample size is 30, for a 95% confidence interval:
+
+𝑧
+z for 95% confidence is 1.96.
+Confidence Interval:
+75
+±
+1.96
+×
+10
+30
+75±1.96× 
+30
+​
+ 
+10
+​
+ 
+CI
+=
+75
+±
+3.57
+CI=75±3.57
+The interval is approximately [71.43, 78.57].
+These concepts are fundamental in understanding and applying statistical methods to draw conclusions from data and make informed decisions.
