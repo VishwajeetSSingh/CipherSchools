@@ -1,0 +1,126 @@
+Functions, Lambda Expressions, and Error Handling
+Functions:
+A function is a block of reusable code designed to perform a specific task. Functions help in modularizing code, making it more organized and maintainable.
+
+Simple Function:
+
+python
+Copy code
+def add_number(a, b):
+    return a + b
+
+print(add_number(3, 4))  # Output: 7
+Function with Default Argument:
+
+python
+Copy code
+def greet(name, message="hello"):
+    return f"{message}, {name}!"
+
+print(greet("Bob"))  # Output: hello, Bob
+print(greet("Pranav", "hi"))  # Output: hi, Pranav
+Function with Variable Arguments:
+
+python
+Copy code
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3, 4))  # Output: 10
+Function with Keyword Arguments:
+
+python
+Copy code
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} : {value}")
+
+display_info(name="Pranav", age=30, city="Jammu")
+# Output:
+# name: Pranav
+# age: 30
+# city: Jammu
+Lambda Expressions
+Lambda expressions, also known as anonymous functions, are small, unnamed functions defined using the lambda keyword. They are commonly used for short, throwaway functions.
+
+Simple Lambda Function:
+
+python
+Copy code
+square = lambda x: x * x
+print(square(5))  # Output: 25
+Lambda Function with map:
+
+python
+Copy code
+numbers = [1, 2, 3, 4, 5, 6]
+squares = list(map(lambda x: x * x, numbers))
+print(squares)  # Output: [1, 4, 9, 16, 25, 36]
+Lambda Function with filter:
+
+python
+Copy code
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # Output: [2, 4, 6]
+Lambda Function with sorted:
+
+python
+Copy code
+students = [("Alice", 25), ("Bob", 23)]
+sorted_students = sorted(students, key=lambda student: student[1])
+print(sorted_students)  # Output: [('Bob', 23), ('Alice', 25)]
+Error Handling
+Error handling in Python is managed using try, except, else, and finally blocks. This approach allows for graceful exception handling and ensures the program continues to run smoothly.
+
+Basic Try-Except Block:
+
+python
+Copy code
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")  # Output: Cannot divide by zero
+Try-Except-Else Block:
+
+python
+Copy code
+try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+else:
+    print("Division successful")  # Output: Division successful
+Try-Except-Finally Block:
+
+python
+Copy code
+try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("Execution completed")  # Output: Execution completed
+Handling Multiple Exceptions:
+
+python
+Copy code
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+except ValueError:
+    print("Invalid input! Please enter a number")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+Raising Exceptions:
+
+python
+Copy code
+def check_positive(number):
+    if number <= 0:
+        raise ValueError("Number must be positive")
+
+try:
+    check_positive(-5)
+except ValueError as e:
+    print(e)
