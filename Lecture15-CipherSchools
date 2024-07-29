@@ -1,0 +1,117 @@
+Data Manipulation and Analysis with NumPy
+Setup:
+To start using NumPy in your Colab environment, first install it with:
+
+python
+Copy code
+pip install numpy
+Then, import the library:
+
+python
+Copy code
+import numpy as np
+Creating Arrays:
+
+1D Array from a List:
+python
+Copy code
+arr1 = np.array([1, 2, 3, 4, 5])
+print(arr1)
+2D Array from a List of Lists:
+python
+Copy code
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr2)
+Creating Arrays with Functions:
+
+Array of Zeros:
+python
+Copy code
+zeros = np.zeros((3, 4))
+print(zeros)
+Array of Ones:
+python
+Copy code
+ones = np.ones((2, 3))
+print(ones)
+Array with a Range of Values:
+python
+Copy code
+range_arr = np.arange(10, 20, 2)
+print(range_arr)
+Array with Random Values:
+python
+Copy code
+random_arr = np.random.rand(3, 3)
+print(random_arr)
+Basic Array Operations - Element-Wise Operations:
+
+Element-Wise Operations:
+python
+Copy code
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr + 2)       # Add 2 to each element
+print(arr * 2)       # Multiply each element by 2
+print(arr - 1)       # Subtract 1 from each element
+print(arr / 2)       # Divide each element by 2
+Mathematical Functions:
+python
+Copy code
+arr = np.array([1, 2, 3, 4, 5])
+
+print(np.sqrt(arr))  # Square root of each element
+print(np.exp(arr))   # Exponential of each element
+print(np.log(arr))   # Natural log of each element
+print(np.sin(arr))   # Sine of each element
+Indexing and Slicing:
+
+Slicing:
+python
+Copy code
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr[1:4])      # Slice from index 1 to 3
+print(arr[:3])       # Slice from start to index 2
+print(arr[2:])       # Slice from index 2 to end
+Advanced Indexing:
+python
+Copy code
+arr = np.array([1, 2, 3, 4, 5])
+
+# Boolean Indexing
+print(arr[arr > 3])  # Elements greater than 3
+
+# Fancy Indexing
+indices = [0, 2, 4]
+print(arr[indices]) # Elements at indices 0, 2, and 4
+Reshaping and Transposing:
+
+Reshaping Arrays:
+python
+Copy code
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr)
+
+reshaped = arr.reshape((3, 2))
+print(reshaped)     # Reshape to 3 rows and 2 columns
+Transposing Arrays:
+python
+Copy code
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+transposed = arr.T
+print(transposed)   # Transpose the array
+Aggregation Functions:
+
+Sum and Mean:
+python
+Copy code
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+print(np.sum(arr))             # Total sum of all elements
+print(np.sum(arr, axis=0))     # Sum along columns
+print(np.sum(arr, axis=1))     # Sum along rows
+print(np.mean(arr))            # Mean of all elements
+print(np.argmin(arr))          # Index of the minimum value
+print(np.argmax(arr))          # Index of the maximum value
