@@ -1,0 +1,31 @@
+Pivot Table:
+Summarize Data: Allows for efficient data summarization.
+Analyze Data: Facilitates thorough data analysis.
+Explore Data: Enables data exploration and presentation in an organized manner.
+Sort Data Automatically: Automatically organizes data.
+Count Values: Automatically counts the total number of values.
+Calculate Totals: Computes the total of specific values or sets of values.
+Display Results: Presents summarized data in a new table.
+Operations:
+
+Summarizing Data: Functions such as sum, average, count, min, etc.
+Filtering Data: Filters by data, product, region, etc.
+Grouping Data: Groups by dates (monthly, quarterly), product, region.
+Calculating Percentages: Computes percentage of total, percentage change.
+Pivot Chart:
+Graphical Representation: Extends pivot tables to provide visual data summaries.
+Dynamic Visualization: Allows for interactive data visualization.
+Operations:
+
+Changing Chart Types: Options include column, bar, line, etc.
+Customizing Chart Elements: Adjust titles, legends, data labels, colors.
+Drilling Down Data: Interactively explore detailed data points.
+Power Query:
+Data Integration: Discover, connect, combine, and refine data from various sources.
+Data Import and Transformation: Simplifies the process of importing, cleaning, and transforming data for Excel analysis.
+Operations:
+
+Merging Queries: Combines data from different tables or sources.
+Appending Queries: Stacks data from similar tables.
+Unpivoting Columns: Transforms columns into rows for better analysis.
+Creating Calculated Columns: Adds custom calculations and transformations.
