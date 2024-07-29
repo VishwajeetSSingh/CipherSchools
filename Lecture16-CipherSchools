@@ -1,0 +1,104 @@
+Working with Data Using Pandas
+Pandas is a robust and versatile open-source library for data analysis and manipulation in Python. It provides efficient data structures such as Series (one-dimensional) and DataFrame (two-dimensional) that are well-suited for handling large datasets.
+
+Installation and Import:
+
+python
+Copy code
+import pandas as pd
+Creating DataFrames:
+
+From a Dictionary:
+python
+Copy code
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+
+df = pd.DataFrame(data)
+print(df)
+From a List of Dictionaries:
+python
+Copy code
+data = [
+    {'Name': 'Alice', 'Age': 25, 'City': 'New York'},
+    {'Name': 'Bob', 'Age': 30, 'City': 'Los Angeles'},
+    {'Name': 'Charlie', 'Age': 35, 'City': 'Chicago'}
+]
+
+df = pd.DataFrame(data)
+print(df)
+From a CSV File:
+Assuming there's a CSV file named 'dataset5.csv' in the current directory:
+python
+Copy code
+df = pd.read_csv('dataset5.csv')
+print(df)
+print(df.head())    # Display the top 5 rows
+print(df.tail())    # Display the last 5 rows
+print(df.info())    # Display additional information about the DataFrame
+print(df.describe()) # Display summary statistics
+Selecting Columns:
+
+python
+Copy code
+print(df['Name'])        # Single column
+print(df[['Name', 'City']])  # Multiple columns
+Filtering Rows:
+
+python
+Copy code
+print(df[df['Age'] > 30])  # Filter rows where Age is greater than 30
+Adding New Columns:
+
+python
+Copy code
+df['Salary'] = [50000, 60000, 70000]
+print(df)
+Modifying Existing Columns:
+
+python
+Copy code
+df['Age'] = df['Age'] + 1
+print(df)
+Dropping Rows and Columns:
+
+python
+Copy code
+df = df.drop(columns=['Salary'])
+print(df)
+
+df = df.drop(index=1)
+print(df)
+Grouping Data:
+
+python
+Copy code
+grouped = df.groupby('City')
+print(grouped['Age'].mean())  # Mean Age for each City
+Aggregating Data:
+
+python
+Copy code
+aggregated = df.groupby('City').agg({'Age': ['mean', 'min', 'max']})
+print(aggregated)
+Merging DataFrames:
+
+python
+Copy code
+df1 = pd.DataFrame({'ID': [1, 2, 3], 'Name': ['Alice', 'Bob', 'Charlie']})
+df2 = pd.DataFrame({'ID': [1, 2, 4], 'Salary': [50000, 60000, 70000]})
+
+merged_df = pd.merge(df1, df2, on='ID', how='inner')
+print(merged_df)
+Joining DataFrames:
+
+python
+Copy code
+df1 = pd.DataFrame({'Name': ['Alice', 'Bob'], 'Age': [25, 30]}, index=[0, 1])
+df2 = pd.DataFrame({'City': ['New York', 'Los Angeles']}, index=[0, 2])
+
+joined_df = df1.join(df2, how='left')
+print(joined_df)
