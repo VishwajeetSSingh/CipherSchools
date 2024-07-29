@@ -1,0 +1,51 @@
+Principles of Data Visualization
+What is Data Visualization?
+Data visualization involves presenting data in visual formats like charts, graphs, and maps. This approach helps in understanding and interpreting complex datasets by making patterns, trends, and outliers more visible. It's especially effective for communicating findings, as visuals can be more intuitive and accessible than raw data or statistical models.
+
+Different Types of Plots:
+
+Line Chart
+Bar Chart
+Pie Chart
+Histogram
+Scatter Plot: For example, Productivity vs. Hours Worked
+Box Plot: For example, Salaries by Department
+Tools and Libraries:
+
+Power BI: Launched by Microsoft
+Plotly:
+Powerful and open-source
+Creates interactive graphs
+Offers a wide range of charts
+Supports cross-platform usage
+Used in Python and R
+Principles of Data Visualization:
+
+Clarity
+
+Avoid clutter
+Use clear visual hierarchies
+Accessibility
+
+Use color schemes that are color-blind friendly
+Ensure text is readable
+Accuracy
+
+Use appropriate scales and axes
+Avoid misleading representations
+Relevance
+
+Tailor visualizations to the audience
+Highlight what's most important
+Aesthetics
+
+Balance color and design elements
+Use whitespace effectively
+Interaction
+
+Examples of interactive tools include hover and drill-down features
+Interaction benefits include exploring data more deeply
+Context
+
+Keep the big picture in mind
+Compare and contrast data points
