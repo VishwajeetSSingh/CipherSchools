@@ -1,0 +1,52 @@
+Introduction to Machine Learning
+What is AI?
+Artificial Intelligence (AI) refers to the simulation of human intelligence processes by machines. It encompasses the ability of computers to think, learn, and make decisions.
+
+Key AI Terms:
+
+Learning: The process by which AI systems improve their performance over time.
+Reasoning: The capability to draw conclusions and make decisions based on data.
+Self-Correction: The ability of AI systems to correct mistakes and improve their accuracy.
+Types of AI:
+
+Weak AI (Narrow AI): Designed to perform specific tasks or solve particular problems. It does not possess general intelligence or consciousness.
+Strong AI (General AI): Hypothetical AI that has the ability to understand, learn, and apply intelligence in a manner similar to human beings.
+What is Machine Learning (ML)?
+Machine Learning is a subset of AI that uses statistical methods to enable machines to improve their performance with experience.
+
+Human Learning: Observations ➡ Learning ➡ Skills
+Machine Learning: Data ➡ Model/Predictor ➡ Predict
+Types of ML:
+
+Supervised Learning:
+
+Description: The model is trained on a labeled dataset, where the input data and corresponding labels are provided. The model learns to make predictions based on this data.
+Process: Labeled Data & Labels ➡ Machine ➡ ML Model ➡ Predictions ➡ Test Data
+Examples: Email spam classification, cat-dog classification.
+Unsupervised Learning:
+
+Description: The model is trained on an unlabeled dataset. It tries to identify patterns and relationships within the data without predefined labels.
+Process: Data ➡ Model ➡ Clusters/Patterns
+Examples: Clustering, recommendation systems.
+Clustering:
+
+Description: A type of unsupervised learning that involves grouping similar data points into clusters based on their features.
+Examples: Customer segmentation, grouping similar documents.
+Applications:
+
+Email Spam Classification: Supervised Learning
+Recommendation System: Both Supervised and Unsupervised
+Cat-Dog Classification: Supervised Learning
+Cat-Dog Clustering: Unsupervised Learning
+Playing AlphaGo: Both Supervised and Unsupervised
+Evolution of AI
+Artificial Intelligence (1950s-1980s): Techniques to mimic human behavior and intelligence.
+Machine Learning (1980s-2010s): Techniques that allow computers to learn from data and improve without being explicitly programmed.
+Deep Learning (2010s-Present): A subset of ML focusing on neural networks with multiple layers (deep neural networks) to model complex patterns in data.
+What is Data Science?
+Data Science is an interdisciplinary field that uses statistical tools and techniques to extract meaningful insights from data. It involves analyzing and interpreting data to make informed decisions.
+
+Sources of Data: Databases, business transactions, sensors, and more.
+Techniques Used: Statistical analysis, machine learning algorithms, and data visualization.
+Objective: Build predictive models and derive actionable insights to inform decision-making.
+Data Science combines elements from statistics, computer science, and domain knowledge to solve complex problems and uncover hidden patterns in data.
