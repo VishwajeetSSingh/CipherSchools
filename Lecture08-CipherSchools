@@ -1,0 +1,26 @@
+How to Write a Formula in Excel
+Select the Cell:
+
+Click on the cell where you want to enter the formula.
+Enter an Equals Sign:
+
+Type = to indicate that you're entering a formula.
+Example of a Formula:
+
+To calculate the product of values in cells A3 and C3:
+In cell E3, type: =A3*C3
+Press Enter.
+Apply the Formula to Other Cells:
+
+Select cell E3.
+Drag the fill handle (small square at the bottom right corner) down to E12.
+The formula will be applied to all selected cells.
+Functions Covered:
+SUM
+AVERAGE
+MAX
+MIN
+XLOOKUP
+SUMPRODUCT
+OFFSET
+QUERY
