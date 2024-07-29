@@ -1,0 +1,22 @@
+Date and Time Functions in Excel
+DATE: Used to create a date with the specified year, month, and day.
+
+Syntax: =DATE(year, month, day)
+DAY: Returns the day of the month from a given date.
+
+Syntax: =DAY(cell_name)
+EDATE: Returns a date that is a specified number of months before or after a start date.
+
+Syntax: =EDATE(starting_date, number_of_months)
+
+Note: Excel stores dates as serial numbers, so you may need to format the cell as a date to display it correctly.
+
+WEEKDAY: Returns the day of the week for a given date.
+
+Syntax: =WEEKDAY(cell_name)
+HOUR: Extracts the hour from a time value.
+
+Syntax: =HOUR(cell_name)
+MINUTE: Extracts the minute from a time value.
+
+Syntax: =MINUTE(cell_name)
