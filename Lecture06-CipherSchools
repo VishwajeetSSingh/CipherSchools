@@ -1,0 +1,72 @@
+Introduction to Version Control:
+What is Version Control?
+
+When working on a saved document, changes might introduce errors. Version control allows the document to be easily reverted to its previous version, making it a sophisticated and hassle-free way to manage document changes.
+Why is Version Control crucial for Software Development?
+
+Version control enables each person to work on their own version independently, avoiding interference from others.
+Git: A Common Version Control System
+What is Git?
+
+Git is a distributed version control system where every developer working on a project has a complete copy of the project history on their local machine. This facilitates managing changes in their respective versions.
+Key Features:
+
+Snapshots
+Branches
+Local & Remote repositories
+Basic Git Commands:
+
+git init
+git add
+git commit
+git status
+Repositories
+What is a Repository?
+
+A repository is a storage space or directory that holds files for a project. There are two types:
+Local: Stored on a developer's own system, where they can make and commit changes.
+Remote: Stored on a server, accessible to others.
+Branches
+What are Branches?
+
+In a project, the main workflow is called the master branch. Each developer can create their own branch, isolating their work from others. Branching allows for independent work. The branch and checkout commands are used to create and switch between branches.
+What is Push?
+
+The git push command uploads local repository changes to a remote repository. Ensure changes are committed before pushing.
+Steps: Add -> Commit -> Push
+What is a Pull Request?
+
+A request to merge code into the main branch. It allows developers to discuss, review, and improve the code.
+What is a Merge Request?
+
+Similar to a pull request.
+Steps: Push -> Merge (Master/Main) -> Clear description of changes made
+What is Commit?
+
+Saving progress by taking a snapshot of changes, including the context of those changes.
+Steps: git add -> git commit
+Basic Git Actions Flowchart:
+Create Repository -> Clone -> Pull -> Commit -> Push -> Merge
+Fetch (parallel to Pull and Commit)
+Using Git for Project Management:
+Branch Management
+Merging and Conflict Resolution
+Version Tracking (git log, git diff, git blame)
+GitHub
+What is GitHub?
+
+A web-based interface that uses Git, allowing multiple people to make separate changes to web pages simultaneously.
+Key Features:
+
+Pull Requests
+Forks (copy and modify)
+Social networking features for developers
+GitLab
+What is GitLab?
+
+A web-based Git repository providing free open and private repositories, issue tracking, and wikis.
+Key Features:
+
+Issue Tracking
+CI/CD Pipelines
+Merge Requests
