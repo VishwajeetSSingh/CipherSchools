@@ -1,0 +1,109 @@
+Python Fundamentals (Variables, Data Types, Conditionals, Loops)
+History: Python was created by Guido van Rossum and released in 1991.
+
+Uses of Python:
+
+Web Development
+Software Development
+Mathematics
+System Scripting
+Data Science
+Why Python:
+
+Python operates across various platforms, including Windows, Mac, Linux, and Raspberry Pi.
+It automatically infers the type of variables.
+Variables & Data Types:
+
+A variable is a name assigned to a memory location in a program.
+Data Types:
+
+Integer: Stores numerical values.
+
+Example: 1, 2, -1
+Built-in Functions and Operations:
+num = 10
+print(abs(num)) # Absolute value
+Output: 10
+print(bin(num)) # Binary representation
+Output: 0b1010
+print(hex(num)) # Hexadecimal representation
+Output: 0xa
+print(pow(num, 2)) # Power function
+Output: 100
+print(divmod(num, 3)) # Quotient and remainder
+Output: (3, 1)
+Float: Handles decimal numbers.
+
+Example: 1.1, 24.5
+Built-in Functions and Operations:
+print(round(price)) # Round to nearest integer
+Output: 100
+Typecasting:
+print(int(price)) # Convert to integer
+Output: 99
+print(float("1234")) # Convert string to float
+Output: 1234.0
+String:
+
+Example: greeting = "hello world!"
+Built-in Functions and Operations:
+print(greeting.lower()) # Convert to lowercase
+print(greeting.upper()) # Convert to uppercase
+print(greeting.replace("world", "python")) # Replace substring
+print(greeting.split()) # Split string into a list
+print(greeting.find("world")) # Find index of substring
+print(len(greeting)) # Length of string
+List: A mutable container for storing a sequence of values of any data type.
+
+Example: fruits = ["apples", "banana", "cherry"]
+Built-in Functions and Operations:
+append(): Adds an element to the end of the list.
+extend(): Adds elements from another list.
+remove(): Removes a specified element.
+pop(): Removes the last element.
+sort(): Sorts the list.
+len(): Returns the length of the list.
+index(): Finds the index of a specified value.
+Tuple: An immutable sequence of values.
+
+Example: coordinates = (10.0, 20.0)
+Built-in Functions and Operations:
+count(): Counts occurrences of a value.
+index(): Finds the index of a specified value.
+len(): Returns the length of the tuple.
+To modify a tuple, convert it to a list:
+coordinates = (10.0, 20.0)
+Convert to list: li = list(coordinates)
+print(li) # Output: [10.0, 20.0]
+Dictionary: A collection of key-value pairs.
+
+Syntax: person = {"name": "Pranav"}
+Built-in Functions and Operations:
+print(person.keys()) # Get all keys
+print(person.values()) # Get all values
+print(person.items()) # Get all key-value pairs
+update(): Updates the dictionary with another dictionary.
+pop(): Removes a key-value pair.
+len(): Returns the number of key-value pairs.
+Set: A collection of unique elements.
+
+Example: s = {1, 2, 3, 4}
+No duplicate values are allowed.
+Operations:
+len(): Returns the number of elements.
+add(): Adds an element to the set.
+Conditional Statements:
+
+if, elif, else
+Example:
+python
+Copy code
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+In this example, if the conditions in the if and elif statements are not met, the else block will execute.
